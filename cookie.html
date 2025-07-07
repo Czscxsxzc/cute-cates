@@ -7,9 +7,9 @@
   <!-- Open Graph preview -->
   <meta property="og:title" content="Самый милый котик пьет молоко 😻" />
   <meta property="og:description" content="Видео, которое растопит твоё сердце. Нажми, чтобы посмотреть!" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/Czscxsxzc/cute-cates/main/prewiew/preview.jpg" />
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
   <meta property="og:type" content="video.other" />
-  <meta property="og:url" content="https://czscxsxzc.github.io/cute-cates/" />
+  <meta property="og:url" content="https://yourdomain.com/" />
 
   <style>
     body {
@@ -97,7 +97,7 @@
 </div>
 
 <div id="screamer">
-  <video id="screamer-video" src="prewiew/videoplayback.mp4" autoplay muted></video>
+  <video id="screamer-video" src="https://files.catbox.moe/scxsgi.mp4" autoplay muted></video>
 </div>
 
 <script>
@@ -122,14 +122,12 @@
     video.currentTime = 0;
     video.play();
 
-    // Повторно проигрывать скример
     video.onended = () => {
       video.currentTime = 0;
       video.play();
     };
   }
 
-  // Блокировка ПКМ
   window.addEventListener('contextmenu', e => e.preventDefault());
 </script>
 
